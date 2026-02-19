@@ -1,0 +1,67 @@
+name: CI - Testes e Relatório no GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  testes-e-publicacao:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar o Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Subir serviços (Docker)
+        run: |
+          if [ -f docker-compose.yml ]; then
+            if command -v docker-compose >/dev/null 2>&1; then
+              docker-compose up -d
+            else
+              docker compose up -d
+            fi
+          fi
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Rodar testes (gera reports/)
+        run: npm test
+
+      - name: Garantir index.html no relatório
+        run: |
+          ls -la reports || true
+          if [ -f reports/mochawesome.html ]; then
+            cp reports/mochawesome.html reports/index.html
+          fi
+          if [ ! -f reports/index.html ]; then
+            first=$(ls reports/*.html 2>/dev/null | head -n 1 || true)
+            if [ -n "$first" ]; then cp "$first" reports/index.html; fi
+          fi
+          test -f reports/index.html
+
+      - name: Salvar relatório como artefato
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio
+          path: reports
+
+      - name: Publicar relatório no GitHub Pages
+        if: github.event_name != 'pull_request'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./reports
