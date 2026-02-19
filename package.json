@@ -1,0 +1,24 @@
+{
+  "name": "pactum-contract",
+  "version": "1.0.0",
+  "description": "Testes de Contrato com Pactum",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"test/**/*.test.js\" --timeout 60000 --reporter mochawesome --reporter-options reportDir=reports,reportFilename=mochawesome,html=true,json=true,quiet=true --exit",
+    "test:api": "mocha \"test/api/**/*.test.js\" --timeout 60000 --reporter mochawesome --reporter-options reportDir=reports,reportFilename=api,html=true,json=true,quiet=true --exit",
+    "test:graphql": "mocha \"test/graphql/**/*.test.js\" --timeout 60000 --reporter mochawesome --reporter-options reportDir=reports,reportFilename=graphql,html=true,json=true,quiet=true --exit",
+    "test:contract": "mocha \"test/contract/**/*.test.js\" --timeout 60000 --reporter mochawesome --reporter-options reportDir=reports,reportFilename=contract,html=true,json=true,quiet=true --exit"
+  },
+  "keywords": [],
+  "author": "ernestosbarbosa",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.3.0",
+    "pactum": "^3.6.0",
+    "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "pactum-flow-plugin": "^0.1.4",
+    "pactum-matchers": "^1.1.6"
+  }
+}
