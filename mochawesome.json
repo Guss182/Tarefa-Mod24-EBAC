@@ -5,9 +5,9 @@
     "passes": 10,
     "pending": 2,
     "failures": 0,
-    "start": "2026-02-19T18:46:57.834Z",
-    "end": "2026-02-19T18:47:31.133Z",
-    "duration": 33299,
+    "start": "2026-02-20T04:21:46.243Z",
+    "end": "2026-02-20T04:22:18.278Z",
+    "duration": 32035,
     "testsRegistered": 12,
     "passPercent": 100,
     "pendingPercent": 16.666666666666664,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f7cd6b06-5200-4226-b668-4d3a28bd06fb",
+      "uuid": "a6cfd321-4a4a-48f8-ab0d-1c5d5049ee6e",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
           "title": "\"before each\" hook in \"{root}\"",
           "fullTitle": "\"before each\" hook in \"{root}\"",
           "timedOut": false,
-          "duration": 438,
+          "duration": 402,
           "state": null,
           "speed": null,
           "pass": false,
@@ -36,8 +36,8 @@
           "context": null,
           "code": "token = await spec()\n  .post('/public/authUser')\n  .withJson({\n    email: 'admin@admin.com',\n    password: 'admin123'\n  })\n  .returns('data.token');",
           "err": {},
-          "uuid": "498d735a-8122-478e-af7a-348588d18e99",
-          "parentUUID": "f7cd6b06-5200-4226-b668-4d3a28bd06fb",
+          "uuid": "e9916311-abd9-46c1-975c-16a2df1f3a20",
+          "parentUUID": "a6cfd321-4a4a-48f8-ab0d-1c5d5049ee6e",
           "isHook": true,
           "skipped": false
         },
@@ -45,7 +45,7 @@
           "title": "\"before each\" hook in \"{root}\"",
           "fullTitle": "\"before each\" hook in \"{root}\"",
           "timedOut": false,
-          "duration": 420,
+          "duration": 397,
           "state": null,
           "speed": null,
           "pass": false,
@@ -54,8 +54,8 @@
           "context": null,
           "code": "token = await spec()\n  .post('/public/authUser')\n  .withJson({ email: 'admin@admin.com', password: 'admin123' })\n  .returns('data.token');",
           "err": {},
-          "uuid": "912b7374-7928-4f3c-a23e-9957782c9281",
-          "parentUUID": "f7cd6b06-5200-4226-b668-4d3a28bd06fb",
+          "uuid": "680628e2-bce4-4865-b928-5c75395f206a",
+          "parentUUID": "a6cfd321-4a4a-48f8-ab0d-1c5d5049ee6e",
           "isHook": true,
           "skipped": false
         },
@@ -63,7 +63,7 @@
           "title": "\"before each\" hook in \"{root}\"",
           "fullTitle": "\"before each\" hook in \"{root}\"",
           "timedOut": false,
-          "duration": 416,
+          "duration": 403,
           "state": null,
           "speed": null,
           "pass": false,
@@ -72,8 +72,8 @@
           "context": null,
           "code": "token = await spec()\n  .post('/public/authUser')\n  .withJson({ email: 'admin@admin.com', password: 'admin123' })\n  .returns('data.token');",
           "err": {},
-          "uuid": "3a22f36f-54d3-42f0-a7f7-ab82d79e6ad3",
-          "parentUUID": "f7cd6b06-5200-4226-b668-4d3a28bd06fb",
+          "uuid": "e4d4a4ac-3731-4907-b7aa-360927569736",
+          "parentUUID": "a6cfd321-4a4a-48f8-ab0d-1c5d5049ee6e",
           "isHook": true,
           "skipped": false
         },
@@ -81,7 +81,7 @@
           "title": "\"before each\" hook in \"{root}\"",
           "fullTitle": "\"before each\" hook in \"{root}\"",
           "timedOut": false,
-          "duration": 420,
+          "duration": 404,
           "state": null,
           "speed": null,
           "pass": false,
@@ -90,8 +90,8 @@
           "context": null,
           "code": "token = await spec()\n  .post('/public/authUser')\n  .withJson({\n    email: 'admin@admin.com',\n    password: 'admin123'\n  })\n  .returns('data.token');",
           "err": {},
-          "uuid": "0cd4b5e0-4db2-404a-8386-e63794a0423c",
-          "parentUUID": "f7cd6b06-5200-4226-b668-4d3a28bd06fb",
+          "uuid": "3176631b-3349-4b74-9e11-899e6b6368fc",
+          "parentUUID": "a6cfd321-4a4a-48f8-ab0d-1c5d5049ee6e",
           "isHook": true,
           "skipped": false
         },
@@ -99,7 +99,7 @@
           "title": "\"before each\" hook in \"{root}\"",
           "fullTitle": "\"before each\" hook in \"{root}\"",
           "timedOut": false,
-          "duration": 433,
+          "duration": 402,
           "state": null,
           "speed": null,
           "pass": false,
@@ -108,8 +108,8 @@
           "context": null,
           "code": "token = await spec()\n  .post('/public/authUser')\n  .withJson({\n    email: 'admin@admin.com',\n    password: 'admin123'\n  })\n  .returns('data.token');",
           "err": {},
-          "uuid": "a8c546f5-9c2c-4781-bfc5-2d32dea24f63",
-          "parentUUID": "f7cd6b06-5200-4226-b668-4d3a28bd06fb",
+          "uuid": "4d61bb0a-5129-4fd1-a476-7fdc786dce8a",
+          "parentUUID": "a6cfd321-4a4a-48f8-ab0d-1c5d5049ee6e",
           "isHook": true,
           "skipped": false
         },
@@ -117,7 +117,7 @@
           "title": "\"before each\" hook in \"{root}\"",
           "fullTitle": "\"before each\" hook in \"{root}\"",
           "timedOut": false,
-          "duration": 455,
+          "duration": 398,
           "state": null,
           "speed": null,
           "pass": false,
@@ -126,8 +126,8 @@
           "context": null,
           "code": "token = await spec()\n  .post('http://lojaebac.ebaconline.art.br/graphql')\n  .withGraphQLQuery(`\n    mutation AuthUser($email: String, $password: String) {\n      authUser(email: $email, password: $password) {\n        success\n        token\n      }\n    }\n  `)\n  .withGraphQLVariables({\n    email: 'admin@admin.com',\n    password: 'admin123'\n  })\n  .returns('data.authUser.token');",
           "err": {},
-          "uuid": "0e60a6ef-0f84-45ed-8849-d14664e15357",
-          "parentUUID": "f7cd6b06-5200-4226-b668-4d3a28bd06fb",
+          "uuid": "b674b605-92ff-4f17-b511-94afced5d001",
+          "parentUUID": "a6cfd321-4a4a-48f8-ab0d-1c5d5049ee6e",
           "isHook": true,
           "skipped": false
         }
@@ -138,7 +138,7 @@
           "title": "API - deve autenticar o usuario corretamente",
           "fullTitle": "API - deve autenticar o usuario corretamente",
           "timedOut": false,
-          "duration": 437,
+          "duration": 399,
           "state": "passed",
           "speed": "slow",
           "pass": true,
@@ -147,8 +147,8 @@
           "context": null,
           "code": "await spec()\n    .post('http://lojaebac.ebaconline.art.br/public/authUser')\n    .withJson({\n        \"email\": \"admin@admin.com\",\n        \"password\": \"admin123\"\n    })\n    .expectStatus(200)\n    .expectJson('success', true)",
           "err": {},
-          "uuid": "a739ced4-dafd-4a85-b2be-2d60d197d79e",
-          "parentUUID": "f7cd6b06-5200-4226-b668-4d3a28bd06fb",
+          "uuid": "142b1996-6f50-4ed7-83ec-fd0158564c02",
+          "parentUUID": "a6cfd321-4a4a-48f8-ab0d-1c5d5049ee6e",
           "isHook": false,
           "skipped": false
         },
@@ -156,7 +156,7 @@
           "title": "API - listagem de usuários (contrato leve)",
           "fullTitle": "API - listagem de usuários (contrato leve)",
           "timedOut": false,
-          "duration": 1261,
+          "duration": 1130,
           "state": "passed",
           "speed": "slow",
           "pass": true,
@@ -165,8 +165,8 @@
           "context": null,
           "code": "await spec()\n  .get('/api/getUsers')\n  .withHeaders('Authorization', token)\n  .expectStatus(200)\n  // contrato \"leve\": não valida profile porque nem todo usuário tem profile preenchido\n  .expectJsonMatch({\n    users: eachLike({\n      _id: like('657b05fe31b986f1c0a7a053'),\n      email: like('cliente@ebac.art.br')\n    })\n  });",
           "err": {},
-          "uuid": "6fff613e-e1b4-4b0c-b495-a6392227a409",
-          "parentUUID": "f7cd6b06-5200-4226-b668-4d3a28bd06fb",
+          "uuid": "aa13f268-dae0-4eca-a97e-5473941919a5",
+          "parentUUID": "a6cfd321-4a4a-48f8-ab0d-1c5d5049ee6e",
           "isHook": false,
           "skipped": false
         },
@@ -174,7 +174,7 @@
           "title": "deve autenticar o usuário corretamente",
           "fullTitle": "deve autenticar o usuário corretamente",
           "timedOut": false,
-          "duration": 431,
+          "duration": 396,
           "state": "passed",
           "speed": "slow",
           "pass": true,
@@ -183,8 +183,8 @@
           "context": null,
           "code": "await spec()\n    .post('http://lojaebac.ebaconline.art.br/graphql')\n    .withGraphQLQuery(`\n    mutation AuthUser($email: String, $password: String) {\n        authUser(email: $email, password: $password) {\n          success\n          token\n        }\n      }\n`)\n    .withGraphQLVariables({\n        \"email\": \"admin@admin.com\",\n        \"password\": \"admin123\"\n    })\n    .expectStatus(200)\n    .expectJson('data.authUser.success', true)",
           "err": {},
-          "uuid": "7431c81f-afe3-4400-a18f-b172470c6e9d",
-          "parentUUID": "f7cd6b06-5200-4226-b668-4d3a28bd06fb",
+          "uuid": "0cf7df66-e6d5-4c0f-bbd7-43e0e0eb2af9",
+          "parentUUID": "a6cfd321-4a4a-48f8-ab0d-1c5d5049ee6e",
           "isHook": false,
           "skipped": false
         },
@@ -192,7 +192,7 @@
           "title": "GraphQL - listagem de usuários (contrato leve)",
           "fullTitle": "GraphQL - listagem de usuários (contrato leve)",
           "timedOut": false,
-          "duration": 661,
+          "duration": 762,
           "state": "passed",
           "speed": "slow",
           "pass": true,
@@ -201,15 +201,15 @@
           "context": null,
           "code": "await spec()\n  .post('http://lojaebac.ebaconline.art.br/graphql')\n  .withHeaders('Authorization', token)\n  // não pedimos profile para evitar nulos / objetos ausentes em alguns usuários\n  .withGraphQLQuery(`\n    query {\n      Users {\n        id\n        email\n      }\n    }\n  `)\n  .expectStatus(200)\n  .expectJsonMatch({\n    data: {\n      Users: eachLike({\n        id: like('657b05fe31b986f1c0a7a053'),\n        email: like('cliente@ebac.art.br')\n      })\n    }\n  });",
           "err": {},
-          "uuid": "aa75d751-6423-4e7c-8186-46f0ac1e096d",
-          "parentUUID": "f7cd6b06-5200-4226-b668-4d3a28bd06fb",
+          "uuid": "048ee561-97f2-49fd-b61b-a640d4e39a2b",
+          "parentUUID": "a6cfd321-4a4a-48f8-ab0d-1c5d5049ee6e",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [
         {
-          "uuid": "188e591f-0c0b-4477-b2ef-813eeddd9ef9",
+          "uuid": "f9fa3231-34d5-4070-a10a-c0f9d8395ba4",
           "title": "Contrato - Categorias (REST)",
           "fullFile": "/home/runner/work/Tarefa-Mod24-EBAC/Tarefa-Mod24-EBAC/test/contract/categories.contract.test.js",
           "file": "/test/contract/categories.contract.test.js",
@@ -220,7 +220,7 @@
               "title": "Deve respeitar o contrato do ADD (addCategory)",
               "fullTitle": "Contrato - Categorias (REST) Deve respeitar o contrato do ADD (addCategory)",
               "timedOut": false,
-              "duration": 361,
+              "duration": 346,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -229,26 +229,26 @@
               "context": null,
               "code": "const name = `CatContrato_${Date.now()}`;\nconst categoryId = await spec()\n  .post('/api/addCategory')\n  .withHeaders('Authorization', token)\n  .withJson({ name, photo: image })\n  .expectStatus(200)\n  .expectJsonMatch({\n    // alguns ambientes retornam \"success\", outros retornam apenas \"message\" + \"data\"\n    message: like('category added'),\n    data: {\n      _id: like('657b05fe31b986f1c0a7a053'),\n      name: like(name)\n      // photo pode variar (string ou array), então não travamos aqui\n    }\n  })\n  .returns('data._id');\nawait spec()\n  .delete(`/api/deleteCategory/${categoryId}`)\n  .withHeaders('Authorization', token)\n  .expectStatus(200);",
               "err": {},
-              "uuid": "2c60267f-f3c0-4eb2-b7a6-644578996947",
-              "parentUUID": "188e591f-0c0b-4477-b2ef-813eeddd9ef9",
+              "uuid": "bdcc012a-0817-47e3-a85a-c3781c227d05",
+              "parentUUID": "f9fa3231-34d5-4070-a10a-c0f9d8395ba4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2c60267f-f3c0-4eb2-b7a6-644578996947"
+            "bdcc012a-0817-47e3-a85a-c3781c227d05"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 361,
+          "duration": 346,
           "root": false,
           "rootEmpty": false,
           "_timeout": 60000
         },
         {
-          "uuid": "98bda85e-b91b-4a12-bb0d-126263538962",
+          "uuid": "6dee15fc-937a-4630-83b7-67491bfa07ec",
           "title": "Contrato - Login (opcional)",
           "fullFile": "/home/runner/work/Tarefa-Mod24-EBAC/Tarefa-Mod24-EBAC/test/contract/loginConsumer.test.js",
           "file": "/test/contract/loginConsumer.test.js",
@@ -268,8 +268,8 @@
               "context": null,
               "code": "",
               "err": {},
-              "uuid": "6b1a0ecf-38c4-4b7e-95cd-21f618324cd6",
-              "parentUUID": "98bda85e-b91b-4a12-bb0d-126263538962",
+              "uuid": "6ef67bd2-97f9-4c8e-828c-bf683b5424fd",
+              "parentUUID": "6dee15fc-937a-4630-83b7-67491bfa07ec",
               "isHook": false,
               "skipped": false
             }
@@ -278,7 +278,7 @@
           "passes": [],
           "failures": [],
           "pending": [
-            "6b1a0ecf-38c4-4b7e-95cd-21f618324cd6"
+            "6ef67bd2-97f9-4c8e-828c-bf683b5424fd"
           ],
           "skipped": [],
           "duration": 0,
@@ -287,7 +287,7 @@
           "_timeout": 60000
         },
         {
-          "uuid": "abdc01fe-e40b-488d-ab9b-cd5075cf1148",
+          "uuid": "d4f4cbc8-9d78-4cbe-8f13-17053af77be0",
           "title": "Contrato - Provider Login (opcional)",
           "fullFile": "/home/runner/work/Tarefa-Mod24-EBAC/Tarefa-Mod24-EBAC/test/contract/loginProvider.test.js",
           "file": "/test/contract/loginProvider.test.js",
@@ -307,8 +307,8 @@
               "context": null,
               "code": "",
               "err": {},
-              "uuid": "1963a8b9-ba45-4ea8-b9fd-784750a1e0c6",
-              "parentUUID": "abdc01fe-e40b-488d-ab9b-cd5075cf1148",
+              "uuid": "185cdf7c-b735-4fe2-a56c-7e7c12b4836f",
+              "parentUUID": "d4f4cbc8-9d78-4cbe-8f13-17053af77be0",
               "isHook": false,
               "skipped": false
             }
@@ -317,7 +317,7 @@
           "passes": [],
           "failures": [],
           "pending": [
-            "1963a8b9-ba45-4ea8-b9fd-784750a1e0c6"
+            "185cdf7c-b735-4fe2-a56c-7e7c12b4836f"
           ],
           "skipped": [],
           "duration": 0,
@@ -326,7 +326,7 @@
           "_timeout": 60000
         },
         {
-          "uuid": "263b78e3-2db2-4e4b-9b82-b8cdcd8cb9ac",
+          "uuid": "89a60e02-4e26-4b1b-9fc7-f6e734588338",
           "title": "Contrato - Produtos (REST)",
           "fullFile": "/home/runner/work/Tarefa-Mod24-EBAC/Tarefa-Mod24-EBAC/test/contract/products.contract.test.js",
           "file": "/test/contract/products.contract.test.js",
@@ -337,7 +337,7 @@
               "title": "Deve respeitar o contrato do ADD (addProduct)",
               "fullTitle": "Contrato - Produtos (REST) Deve respeitar o contrato do ADD (addProduct)",
               "timedOut": false,
-              "duration": 480,
+              "duration": 464,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -346,26 +346,26 @@
               "context": null,
               "code": "const name = `ProdContrato_${Date.now()}`;\nconst productId = await spec()\n  .post('/api/addProduct')\n  .withHeaders('Authorization', token)\n  .withJson({\n    name,\n    price: 99.9,\n    quantity: 2,\n    categories: [],\n    description: 'Produto criado no contrato',\n    photos: [photoUrl],\n    visible: true,\n    location: 'SP, SP'\n  })\n  .expectStatus(200)\n  .expectJsonMatch({\n    message: like('product added'),\n    data: {\n      _id: like('657b05fe31b986f1c0a7a053'),\n      name: like(name),\n      price: like(99.9)\n    }\n  })\n  .returns('data._id');\nawait spec()\n  .delete(`/api/deleteProduct/${productId}`)\n  .withHeaders('Authorization', token)\n  .expectStatus(200);",
               "err": {},
-              "uuid": "c8497f4c-f1df-4aac-9f53-f54f61857378",
-              "parentUUID": "263b78e3-2db2-4e4b-9b82-b8cdcd8cb9ac",
+              "uuid": "2ec0420e-c9a0-47e6-b78d-dd414654a98b",
+              "parentUUID": "89a60e02-4e26-4b1b-9fc7-f6e734588338",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c8497f4c-f1df-4aac-9f53-f54f61857378"
+            "2ec0420e-c9a0-47e6-b78d-dd414654a98b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 480,
+          "duration": 464,
           "root": false,
           "rootEmpty": false,
           "_timeout": 60000
         },
         {
-          "uuid": "d49d96d8-2142-4ab7-97dc-7b01c48c3aad",
+          "uuid": "b711031a-55d1-4e09-880c-70969d9cc95a",
           "title": "Categorias (REST com Pactum)",
           "fullFile": "/home/runner/work/Tarefa-Mod24-EBAC/Tarefa-Mod24-EBAC/test/graphql/categories.test.js",
           "file": "/test/graphql/categories.test.js",
@@ -376,7 +376,7 @@
               "title": "API - Deve listar as categorias (contrato leve)",
               "fullTitle": "Categorias (REST com Pactum) API - Deve listar as categorias (contrato leve)",
               "timedOut": false,
-              "duration": 972,
+              "duration": 958,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -385,8 +385,8 @@
               "context": null,
               "code": "await spec()\n  .get('/public/getCategories')\n  .expectStatus(200)\n  // contrato leve: alguns registros podem não ter photo, então validamos só _id e name\n  .expectJsonMatch({\n    categories: eachLike({\n      _id: like('657b05fe31b986f1c0a7a053'),\n      name: like('Guitarra')\n    })\n  });",
               "err": {},
-              "uuid": "1a689f23-afd0-42e2-b1c2-b6ed37f5e39b",
-              "parentUUID": "d49d96d8-2142-4ab7-97dc-7b01c48c3aad",
+              "uuid": "5d00d52a-e826-4be8-8d44-5bc8e43878be",
+              "parentUUID": "b711031a-55d1-4e09-880c-70969d9cc95a",
               "isHook": false,
               "skipped": false
             },
@@ -394,7 +394,7 @@
               "title": "API - Deve criar, editar e deletar uma categoria (fluxo completo)",
               "fullTitle": "Categorias (REST com Pactum) API - Deve criar, editar e deletar uma categoria (fluxo completo)",
               "timedOut": false,
-              "duration": 543,
+              "duration": 492,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -403,27 +403,27 @@
               "context": null,
               "code": "const name = `Cat_${Date.now()}`;\n// CREATE\nconst categoryId = await spec()\n  .post('/api/addCategory')\n  .withHeaders('Authorization', token)\n  .withJson({ name, photo: image })\n  .expectStatus(200)\n  .expectJsonMatch('data', {\n    _id: like('657b05fe31b986f1c0a7a053'),\n    name: like(name)\n  })\n  .returns('data._id');\n// EDIT\nconst nameEdit = `${name}_EDIT`;\nawait spec()\n  .put(`/api/editCategory/${categoryId}`)\n  .withHeaders('Authorization', token)\n  .withJson({ name: nameEdit, photo: image })\n  .expectStatus(200)\n  .expectJsonMatch('success', true)\n  .expectJsonMatch('message', like('category updated'));\n// DELETE\nawait spec()\n  .delete(`/api/deleteCategory/${categoryId}`)\n  .withHeaders('Authorization', token)\n  .expectStatus(200);",
               "err": {},
-              "uuid": "4ed57a16-586e-459c-ad65-1dcd4140cefe",
-              "parentUUID": "d49d96d8-2142-4ab7-97dc-7b01c48c3aad",
+              "uuid": "7cb11060-e1be-4224-af3d-7498e97d8359",
+              "parentUUID": "b711031a-55d1-4e09-880c-70969d9cc95a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1a689f23-afd0-42e2-b1c2-b6ed37f5e39b",
-            "4ed57a16-586e-459c-ad65-1dcd4140cefe"
+            "5d00d52a-e826-4be8-8d44-5bc8e43878be",
+            "7cb11060-e1be-4224-af3d-7498e97d8359"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1515,
+          "duration": 1450,
           "root": false,
           "rootEmpty": false,
           "_timeout": 60000
         },
         {
-          "uuid": "4a81dda1-ec85-44b6-99b1-bf04b102405b",
+          "uuid": "d71c21ac-edc5-450e-9052-72a20b44359f",
           "title": "Produtos (REST com Pactum)",
           "fullFile": "/home/runner/work/Tarefa-Mod24-EBAC/Tarefa-Mod24-EBAC/test/graphql/products.test.js",
           "file": "/test/graphql/products.test.js",
@@ -434,7 +434,7 @@
               "title": "API + Contrato - Deve listar os produtos (contrato leve)",
               "fullTitle": "Produtos (REST com Pactum) API + Contrato - Deve listar os produtos (contrato leve)",
               "timedOut": false,
-              "duration": 1077,
+              "duration": 1022,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -443,8 +443,8 @@
               "context": null,
               "code": "await spec()\n  .get('/public/getProducts')\n  .expectStatus(200)\n  // contrato leve: existem produtos legados incompletos (ex.: name null), então validamos só o _id\n  .expectJsonMatch({\n    products: eachLike({\n      _id: like('657b05fe31b986f1c0a7a053')\n    })\n  });",
               "err": {},
-              "uuid": "ab5f83f0-11aa-45b2-8f3e-e4b7696bef21",
-              "parentUUID": "4a81dda1-ec85-44b6-99b1-bf04b102405b",
+              "uuid": "44355198-8762-4f07-954f-4551f4d03035",
+              "parentUUID": "d71c21ac-edc5-450e-9052-72a20b44359f",
               "isHook": false,
               "skipped": false
             },
@@ -452,7 +452,7 @@
               "title": "API - Deve criar, editar e deletar um produto (fluxo completo)",
               "fullTitle": "Produtos (REST com Pactum) API - Deve criar, editar e deletar um produto (fluxo completo)",
               "timedOut": false,
-              "duration": 784,
+              "duration": 979,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -461,36 +461,36 @@
               "context": null,
               "code": "const name = `Prod_${Date.now()}`;\n// CREATE\nconst productId = await spec()\n  .post('/api/addProduct')\n  .withHeaders('Authorization', token)\n  .withJson({\n    name,\n    price: 1327.0,\n    quantity: 3,\n    categories: [],\n    description: 'Produto criado pelo teste automatizado',\n    photos: [photoUrl],\n    visible: true,\n    location: 'SP, SP'\n  })\n  .expectStatus(200)\n  .expectJsonMatch('data', {\n    _id: like('657b05fe31b986f1c0a7a053'),\n    name: like(name),\n    price: like(1327.0)\n  })\n  .returns('data._id');\n// EDIT\nconst nameEdit = `${name}_EDIT`;\nawait spec()\n  .put(`/api/editProduct/${productId}`)\n  .withHeaders('Authorization', token)\n  .withJson({\n    name: nameEdit,\n    price: 5500.0,\n    quantity: 1,\n    categories: [],\n    description: 'Produto editado pelo teste automatizado',\n    photos: [photoUrl],\n    visible: true,\n    location: 'SP, SP'\n  })\n  .expectStatus(200)\n  .expectJsonMatch('success', true)\n  .expectJsonMatch('message', like('product updated'));\n// DELETE\nawait spec()\n  .delete(`/api/deleteProduct/${productId}`)\n  .withHeaders('Authorization', token)\n  .expectStatus(200);",
               "err": {},
-              "uuid": "d0cc6449-7a94-4106-9e18-b91dc2e4a663",
-              "parentUUID": "4a81dda1-ec85-44b6-99b1-bf04b102405b",
+              "uuid": "a02b4706-66fd-423c-abb7-6729d1253e27",
+              "parentUUID": "d71c21ac-edc5-450e-9052-72a20b44359f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ab5f83f0-11aa-45b2-8f3e-e4b7696bef21",
-            "d0cc6449-7a94-4106-9e18-b91dc2e4a663"
+            "44355198-8762-4f07-954f-4551f4d03035",
+            "a02b4706-66fd-423c-abb7-6729d1253e27"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1861,
+          "duration": 2001,
           "root": false,
           "rootEmpty": false,
           "_timeout": 60000
         }
       ],
       "passes": [
-        "a739ced4-dafd-4a85-b2be-2d60d197d79e",
-        "6fff613e-e1b4-4b0c-b495-a6392227a409",
-        "7431c81f-afe3-4400-a18f-b172470c6e9d",
-        "aa75d751-6423-4e7c-8186-46f0ac1e096d"
+        "142b1996-6f50-4ed7-83ec-fd0158564c02",
+        "aa13f268-dae0-4eca-a97e-5473941919a5",
+        "0cf7df66-e6d5-4c0f-bbd7-43e0e0eb2af9",
+        "048ee561-97f2-49fd-b61b-a640d4e39a2b"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 2790,
+      "duration": 2687,
       "root": true,
       "rootEmpty": false,
       "_timeout": 60000
