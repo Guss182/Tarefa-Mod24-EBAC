@@ -24,12 +24,10 @@ describe('Contrato - Categorias (REST)', () => {
       .withJson({ name, photo: image })
       .expectStatus(200)
       .expectJsonMatch({
-        // alguns ambientes retornam "success", outros retornam apenas "message" + "data"
         message: like('category added'),
         data: {
           _id: like('657b05fe31b986f1c0a7a053'),
           name: like(name)
-          // photo pode variar (string ou array), então não travamos aqui
         }
       })
       .returns('data._id');

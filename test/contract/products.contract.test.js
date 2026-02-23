@@ -1,4 +1,3 @@
-// test/contract/products.contract.test.js
 const { spec, request } = require('pactum');
 const { like } = require('pactum-matchers');
 

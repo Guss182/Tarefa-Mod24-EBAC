@@ -1,5 +1,3 @@
-// test/graphql/products.test.js
-// Obs: este arquivo usa os endpoints REST do projeto (permitido pelo enunciado: contratos via REST ou GraphQL).
 const { spec, request } = require('pactum');
 const { eachLike, like } = require('pactum-matchers');
 
@@ -23,7 +21,6 @@ describe('Produtos (REST com Pactum)', () => {
     await spec()
       .get('/public/getProducts')
       .expectStatus(200)
-      // contrato leve: existem produtos legados incompletos (ex.: name null), então validamos só o _id
       .expectJsonMatch({
         products: eachLike({
           _id: like('657b05fe31b986f1c0a7a053')
@@ -34,7 +31,6 @@ describe('Produtos (REST com Pactum)', () => {
   it('API - Deve criar, editar e deletar um produto (fluxo completo)', async () => {
     const name = `Prod_${Date.now()}`;
 
-    // CREATE
     const productId = await spec()
       .post('/api/addProduct')
       .withHeaders('Authorization', token)
@@ -56,7 +52,6 @@ describe('Produtos (REST com Pactum)', () => {
       })
       .returns('data._id');
 
-    // EDIT
     const nameEdit = `${name}_EDIT`;
     await spec()
       .put(`/api/editProduct/${productId}`)
@@ -75,7 +70,6 @@ describe('Produtos (REST com Pactum)', () => {
       .expectJsonMatch('success', true)
       .expectJsonMatch('message', like('product updated'));
 
-    // DELETE
     await spec()
       .delete(`/api/deleteProduct/${productId}`)
       .withHeaders('Authorization', token)

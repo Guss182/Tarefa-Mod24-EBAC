@@ -1,5 +1,3 @@
-// test/graphql/categories.test.js
-// Obs: este arquivo usa os endpoints REST do projeto (permitido pelo enunciado: contratos via REST ou GraphQL).
 const { spec, request } = require('pactum');
 const { eachLike, like } = require('pactum-matchers');
 
@@ -34,8 +32,6 @@ describe('Categorias (REST com Pactum)', () => {
 
   it('API - Deve criar, editar e deletar uma categoria (fluxo completo)', async () => {
     const name = `Cat_${Date.now()}`;
-
-    // CREATE
     const categoryId = await spec()
       .post('/api/addCategory')
       .withHeaders('Authorization', token)
@@ -45,9 +41,8 @@ describe('Categorias (REST com Pactum)', () => {
         _id: like('657b05fe31b986f1c0a7a053'),
         name: like(name)
       })
-      .returns('data._id');
 
-    // EDIT
+      .returns('data._id');
     const nameEdit = `${name}_EDIT`;
     await spec()
       .put(`/api/editCategory/${categoryId}`)
@@ -57,7 +52,6 @@ describe('Categorias (REST com Pactum)', () => {
       .expectJsonMatch('success', true)
       .expectJsonMatch('message', like('category updated'));
 
-    // DELETE
     await spec()
       .delete(`/api/deleteCategory/${categoryId}`)
       .withHeaders('Authorization', token)
